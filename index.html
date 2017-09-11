@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<title>Urban Yoga</title><meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" href="css/maruti-style.css" />
+<link rel="stylesheet" href="css/maruti-media.css" class="skin-color" />
+ <script src= "https://cdn.zingchart.com/zingchart.min.js"></script>
+
+<style type="text/css">
+        .zc-ref {
+  display: none;
+
+}
+.tab-content{position: absolute;top:50px; left: -210px;}
+#myChart-license-text, #myChart1-license-text, #myChart2-license-text{ display: none; }
+
+
+
+.panel.with-nav-tabs .panel-heading{
+    padding: 5px 5px 0 5px;
+}
+.panel.with-nav-tabs .nav-tabs{
+  border-bottom: none;
+}
+.panel.with-nav-tabs .nav-justified{
+  margin-bottom: -1px;
+}/*** PANEL PRIMARY ***/
+.with-nav-tabs.panel-primary .nav-tabs > li > a,
+.with-nav-tabs.panel-primary .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-primary .nav-tabs > li > a:focus {
+    color: #88c08d;
+}
+.with-nav-tabs.panel-primary .nav-tabs > .open > a,
+.with-nav-tabs.panel-primary .nav-tabs > .open > a:hover,
+.with-nav-tabs.panel-primary .nav-tabs > .open > a:focus,
+.with-nav-tabs.panel-primary .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-primary .nav-tabs > li > a:focus {
+  color: #000;
+  background-color: #aad4ae;
+  border-color: transparent;
+}
+.with-nav-tabs.panel-primary .nav-tabs > li.active > a,
+.with-nav-tabs.panel-primary .nav-tabs > li.active > a:hover,
+.with-nav-tabs.panel-primary .nav-tabs > li.active > a:focus {
+  color: #000;
+  background-color: #fff;
+  border-color: #696e69;
+  border-bottom-color: transparent;
+}
+.with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu {
+    background-color: #a3d3a7;
+    border-color: #696e69;
+}
+.with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu > li > a {
+    color: #000;   
+}
+.with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu > li > a:hover,
+.with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu > li > a:focus {
+    background-color: #696e69;
+}
+.with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu > .active > a,
+.with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu > .active > a:hover,
+.with-nav-tabs.panel-primary .nav-tabs > li.dropdown .dropdown-menu > .active > a:focus {
+    background-color: #aad4ae;
+}
+/********************************************************************/
+
+.tabprimary ul li{ float: left;display: inline;padding: 10px; }
+</style>
+
+</head>
+
+<body>
+
+<!--Header-part-->
+<div id="header">
+  <h1><a href="dashboard.html">Urban Yoga</a></h1>
+</div>
+<!--close-Header-part--> 
+
+<!--top-Header-messaages-->
+<div class="btn-group rightzero"> <a class="top_message tip-left" title="Manage Files"><i class="icon-file"></i></a> <a class="top_message tip-bottom" title="Manage Users"><i class="icon-user"></i></a> <a class="top_message tip-bottom" title="Manage Comments"><i class="icon-comment"></i><span class="label label-important">5</span></a> <a class="top_message tip-bottom" title="Manage Orders"><i class="icon-shopping-cart"></i></a> </div>
+<!--close-top-Header-messaages--> 
+
+<!--top-Header-menu-->
+
+
+
+<div id="user-nav" class="navbar navbar-inverse">
+  <ul class="nav">
+   <div class="col-md-12">
+            <div class="panel with-nav-tabs panel-primary">
+                <div class="panel-heading">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#tab1primary" data-toggle="tab">Dashboard</a></li>
+                            <li><a href="#tab2primary" data-toggle="tab">Sign In</a></li>
+                            <li><a href="#tab3primary" data-toggle="tab">Classes</a></li>
+                            <li><a href="#tab4primary" data-toggle="tab">Workshop</a></li>
+                            <li><a href="#tab5primary" data-toggle="tab">Appointments</a></li>
+                            <li><a href="#tab6primary" data-toggle="tab">Client Home</a></li>
+                            <li><a href="#tab7primary" data-toggle="tab">Retail</a></li>
+                            
+                        </ul>
+                </div>
+                <div class="panel-body">
+                    <div class="tab-content">
+                        
+                        <div class="tab-pane fade in active" id="tab1primary">
+                         <div class="tabprimary"><a href="#" class="visible-phone"> Dashboard2</a>
+                          <ul>
+                            <li><a href="#"> <span>Dashboard</span></a> </li>
+                            <li> <a href="#"> <span>Business Overview</span></a> </li>
+                            <li> <a href="#"> <span>Schdule</span></a> </li>
+                            <li><a href="#"> <span>Reports</span></a></li>
+                           
+                            </li>
+                           
+                          </ul>
+                        </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="tab2primary"><div class="tabprimary"><a href="#" class="visible-phone"> Dashboard2</a>
+                          <ul>
+                            <li><a href="#"> <span>Dashboard</span></a> </li>
+                            <li> <a href="#"> <span>Business Overview</span></a> </li>
+                            <li> <a href="#"> <span>Schdule</span></a> </li>
+                            <li><a href="#"> <span>Reports</span></a></li>
+                           
+                            </li>
+                           
+                          </ul>
+                        </div></div>
+                        <div class="tab-pane fade" id="tab3primary"><div class="tabprimary"><a href="#" class="visible-phone"> Dashboard2</a>
+                          <ul>
+                            <li><a href="#"> <span>Dashboard</span></a> </li>
+                            <li> <a href="#"> <span>Business Overview</span></a> </li>
+                            <li> <a href="#"> <span>Schdule</span></a> </li>
+                            <li><a href="#"> <span>Reports</span></a></li>
+                           
+                            </li>
+                           
+                          </ul>
+                        </div></div>
+                        <div class="tab-pane fade" id="tab4primary"><div class="tabprimary"><a href="#" class="visible-phone"> Dashboard2</a>
+                          <ul>
+                            <li><a href="#"> <span>Dashboard</span></a> </li>
+                            <li> <a href="#"> <span>Business Overview</span></a> </li>
+                            <li> <a href="#"> <span>Schdule</span></a> </li>
+                            <li><a href="#"> <span>Reports</span></a></li>
+                           
+                            </li>
+                           
+                          </ul>
+                        </div></div>
+                        <div class="tab-pane fade" id="tab5primary"><div class="tabprimary"><a href="#" class="visible-phone"> Dashboard2</a>
+                          <ul>
+                            <li><a href="#"> <span>Dashboard</span></a> </li>
+                            <li> <a href="#"> <span>Business Overview</span></a> </li>
+                            <li> <a href="#"> <span>Schdule</span></a> </li>
+                            <li><a href="#"> <span>Reports</span></a></li>
+                           
+                            </li>
+                           
+                          </ul>
+                        </div></div>
+                        <div class="tab-pane fade" id="tab6primary"><div class="tabprimary"><a href="#" class="visible-phone"> Dashboard2</a>
+                          <ul>
+                            <li><a href="#"> <span>Dashboard</span></a> </li>
+                            <li> <a href="#"> <span>Business Overview</span></a> </li>
+                            <li> <a href="#"> <span>Schdule</span></a> </li>
+                            <li><a href="#"> <span>Reports</span></a></li>
+                           
+                            </li>
+                           
+                          </ul>
+                        </div></div>
+                        <div class="tab-pane fade" id="tab7primary"><div class="tabprimary"><a href="#" class="visible-phone"> Dashboard2</a>
+                          <ul>
+                            <li><a href="#"> <span>Dashboard</span></a> </li>
+                            <li> <a href="#"> <span>Business Overview</span></a> </li>
+                            <li> <a href="#"> <span>Schdule</span></a> </li>
+                            <li><a href="#"> <span>Reports</span></a></li>
+                           
+                            </li>
+                           
+                          </ul>
+                        </div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+  </ul>
+</div>
+<!--close-top-Header-menu-->
+
+
+
+<div id="content">
+ <div class="col-md-12 span12"> 
+  <div  class="quick-actions_homepage">
+    <ul class="quick-actions">
+           
+           <li class="col-lg-3 col-md-3 col-sm-6 Newprog"> <a href="#"> <i class="icon-plus"></i> New Program </a> </li>
+           <li class="col-lg-3 col-md-3 col-sm-6"> <h5>Yoga Classes <i class="icon-pencil"></i></h5> 
+           <div id='myChart' class="col-lg-3"> </div> 
+            <div>
+  
+             
+  <table class="table" id="data">
+    <thead>
+      <tr>
+        <th>Today Monthly </th>
+        <th>Current</th>
+        <th>1-Year</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Sales</td>
+        <td><span class="border-color">$23.483</span></td>
+        <td><div class="left peity_line_good"><span><span style="display: none;">12,6,9,23,14,10,17</span>
+              <canvas width="50" height="24"></canvas>
+              </span></div></td>
+      </tr>
+     
+      
+    </tbody>
+  </table>
+<a onclick="myFunction()" class="moredata">More</a>
+<div id="myDIV">
+<table class="table">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+               </li>
+    
+          
+           <li class="col-lg-3 col-md-3 col-sm-6"> <h5>Yoga Privates <i class="icon-pencil"></i></h5> <div id='myChart1'> 
+           </div></li>
+
+           <li class="col-lg-3 col-md-3 col-sm-6"> <h5>Yoga Duets <i class="icon-pencil"></i></h5> <div id='myChart2'> 
+           </div></li>
+          
+        </ul>
+  </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-8"> 
+
+      <table class="table2">
+    <thead>
+      <tr>
+        <th>All Programs</th>
+        <th>Monthly Sales</th>
+        <th>Monthly attendance</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Opne Practice</td>
+        <td>$572.00</td>
+        <td>276 Visits</td>
+      </tr>
+      
+      <tr>
+        <td>Yoga Videos</td>
+        <td>$391.31</td>
+        <td>82 Views</td>
+      </tr>
+    </tbody>
+  </table>
+       </div>
+
+      </div></div></div> 
+    
+<div class="row-fluid">
+      <div id="footer" class="span12"> 2017 &copy; Urban Yoga </div>
+    </div>
+
+<script src="js/jquery.min.js"></script>  
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/maruti.js"></script> 
+<script src="js/maruti.dashboard.js"></script> 
+
+
+<script type="text/javascript">
+    var myConfig = {
+    "type":"bar3d",
+    "background-color":"#fff",
+    "3d-aspect":{
+        "true3d":0,
+        "y-angle":6,
+        "depth":6
+    },
+    "title":{
+        "text":"Sales By Month",
+        "height":"40px",
+        "font-weight":"normal",
+        "text-color":"#ffffff",
+        "font-size":"12px"
+    },
+    "legend":{
+        "layout":"float",
+        "background-color":"none",
+        "border-color":"none",
+        "item":{
+            "font-color":"#333"
+        },
+        "x":"27%",
+        "y":"10%",
+        "width":"40%",
+        "shadow":0
+    },
+    "plotarea":{
+        "margin":"115px 55px 70px 110px",
+        "background-color":"#fff",
+        "alpha":0.3
+    },
+    "scale-y":{
+        "background-color":"#fff",
+        "border-width":"1px",
+        "border-color":"#333",
+        "alpha":0.5,
+        "format":"$%v",
+        "guide":{
+            "line-style":"solid",
+            "line-color":"#333",
+            "alpha":0.2
+        },
+        "tick":{
+            "line-color":"#333",
+            "alpha":0.2
+        },
+        "item":{
+            "font-color":"#333",
+            "padding-right":"10px"
+        }
+    },
+    "scale-x":{
+        "background-color":"#fff",
+        "border-width":"1px",
+        "border-color":"#333",
+        "alpha":0.5,
+        "values":["Jan","Feb","Mar","Apr","May","June","July"],
+        "guide":{
+            "visible":false
+        },
+        "tick":{
+            "line-color":"#333",
+            "alpha":0.2
+        },
+        "item":{
+            "font-size":"8px",
+            "font-color":"#333"
+        }
+    },
+    "series":[
+        {
+            "values":[22650,18750,29050,28745,31500,31625,41625],
+            "text":"",
+            "font-size":"0px",
+            "background-color":"#673AB7 #9575CD",
+            "border-color":"#673AB7",
+            "legend-marker":{
+            "border-color":"#673AB7"
+            },
+            "tooltip":{
+                "background-color":"#673AB7",
+                "text":"$%v",
+                "font-size":"7px",
+                "padding":"3 3",
+                "border-color":"none",
+                "shadow":0,
+                "border-radius":5
+            }
+        },
+        {
+            "values":[24200,12750,24250,11500,22550,24250,26250],
+            "text":"",
+            "background-color":"#00e614 #54cc5f",
+            "border-color":"#00e614",
+            "legend-marker":{
+                "border-color":"#00e614"
+            },
+            "tooltip":{
+                "background-color":"#00e614",
+                "text":"$%v",
+                "font-size":"9px",
+                "padding":"3 6",
+                "border-color":"none",
+                "shadow":0,
+                "border-radius":5
+            }
+        }
+    ]
+};
+ 
+zingchart.render({ 
+    id : 'myChart', 
+    data : myConfig, 
+    height: 300, 
+    width: 220,
+    defaults:{
+      'font-family':'sans-serif'
+    }
+});
+zingchart.render({ 
+    id : 'myChart1', 
+    data : myConfig, 
+    height: 300, 
+    width: 220,
+    defaults:{
+      'font-family':'sans-serif'
+    }
+});
+zingchart.render({ 
+    id : 'myChart2', 
+    data : myConfig, 
+    height: 300, 
+    width: 220,
+    defaults:{
+      'font-family':'sans-serif'
+    }
+});
+</script>
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById('myDIV');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+
+    }
+}
+</script>
+
+</body>
+
+</html>
